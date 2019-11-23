@@ -4,12 +4,12 @@ import MenuList from './components/MenuList/MenuList.jsx'
 import OrderDetail from './components/OrderDetails/OrderDetails.jsx'
 
 const menu = [
-  {name : 'Hamburger', price:80 , icon : '<i class="fas fa-hamburger"></i>'},
-  {name : 'Cheeseburger', price:90 , icon : '<i class="fas fa-hamburger"></i>'},
+  {name : 'Hamburger', price:80 , icon : 'fas fa-hamburger'},
+  {name : 'Cheeseburger', price:90 , icon : 'fas fa-hamburger'},
   {name : 'Fries', price:45 , icon : 'image'},
-  {name : 'Coffee', price:70 , icon : '<i class="fas fa-coffee"></i>'},
-  {name : 'Tea', price:50 , icon : '<i class="fas fa-mug-hot"></i>'},
-  {name : 'Cola', price:40 , icon : '<i class="fas fa-cocktail"></i>'},
+  {name : 'Coffee', price:70 , icon : 'fas fa-coffee'},
+  {name : 'Tea', price:50 , icon : 'fas fa-mug-hot'},
+  {name : 'Cola', price:40 , icon : 'fas fa-cocktail'},
 ]
 
 class App extends Component {
@@ -17,7 +17,7 @@ class App extends Component {
   return (
     <div className="App d-flex justify-content-center align-items-strech w-75 mx-auto mt-5 h-75">
       <OrderDetail />
-      <MenuList />
+      <MenuList menu={menu} />
     </div>
   );
  }

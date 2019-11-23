@@ -1,12 +1,12 @@
 import React from 'react'
 
-const MenuItem = () => {
+const MenuItem = ({name,price,icon}) => {
   return (
-    <div className='d-flex border border-warning rounded w-50 mx-1 h-100'>
-      <i></i>
+    <div className='d-flex border border-warning rounded w-50 my-1'>
+      <i className={icon}></i>
       <div className='d-flex flex-column'>
-        <span>Hamburger</span>
-        <span>Price : 80 kgs</span>
+  <span>{name}</span>
+        <span>Price : {price} kgs</span>
       </div>
       
     </div>
