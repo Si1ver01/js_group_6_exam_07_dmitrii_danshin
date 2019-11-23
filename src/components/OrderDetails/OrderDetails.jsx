@@ -16,7 +16,6 @@ export default class OrderDetails extends Component {
               menu={this.props.menu}
               orderList={this.props.orderList}
               key={index}
-              index={index}
               deleteOrderElement={() => this.props.deleteOrderElement(elem)}
             />
           ))
