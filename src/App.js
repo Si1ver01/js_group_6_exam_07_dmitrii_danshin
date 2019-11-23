@@ -22,12 +22,18 @@ class App extends Component {
     this.setState({order})
   };
 
+  deleteOrderElement = name => {
+    const order = [...this.state.order];
+    const newOrder = order.filter(elem => elem !== name)
+    this.setState({order: newOrder})
+  }
+
 
   render() {
     console.log(this.state.order, 'Order')
     return (
       <div className="App d-flex justify-content-center align-items-strech w-50 mx-auto mt-5 h-75">
-        <OrderDetail menu={menu} orderList={this.state.order}/>
+        <OrderDetail menu={menu} orderList={this.state.order} deleteOrderElement={this.deleteOrderElement}/>
         <MenuList menu={menu} order={this.order}/>
       </div>
     );

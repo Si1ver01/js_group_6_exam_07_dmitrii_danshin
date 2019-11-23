@@ -22,8 +22,12 @@
   color: #09d3ac;
 }
 
-i{
+.fas{
   font-size: 42px;
+}
+
+.btn{
+  padding: 5px;
 }
 
 .cards{

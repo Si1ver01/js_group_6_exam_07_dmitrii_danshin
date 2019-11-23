@@ -7,7 +7,7 @@ export default class OrderDetails extends Component {
     const unique = [...new Set(this.props.orderList)];
 
     return (
-      <div className="d-flex flex-column w-50 border border-info mx-1">
+      <div className="d-flex flex-column w-50 border border-info rounded mx-1">
         <h1>OrderDetail</h1>
         {unique.length ? (
           unique.map((elem, index) => (
@@ -17,6 +17,7 @@ export default class OrderDetails extends Component {
               orderList={this.props.orderList}
               key={index}
               index={index}
+              deleteOrderElement={() => this.props.deleteOrderElement(elem)}
             />
           ))
         ) : (
