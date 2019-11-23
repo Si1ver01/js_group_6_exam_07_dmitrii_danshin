@@ -21,3 +21,16 @@
 .App-link {
   color: #09d3ac;
 }
+
+i{
+  font-size: 42px;
+}
+
+.cards{
+  transition: .3s ease-in;
+}
+
+.cards:hover{
+  background: rgba(210, 105, 30, 0.664);
+  cursor: pointer;
+}
